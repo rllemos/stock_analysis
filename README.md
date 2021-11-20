@@ -4,7 +4,7 @@ stock_analysis
 
 #**VBA_Challenge**
 
-##**Overview of Project**
+#**Overview of Project**
 
 Steve,our client, wants to analyze green energy stocks and compare the total daily volume and yearly return for each stock.
  To do so I will Create a VBA macro that can automate these analyses on a click of a button.
@@ -20,7 +20,7 @@ Steve,our client, wants to analyze green energy stocks and compare the total dai
 
 Using the green_stocks dataset we can refactor a Microsoft Excel VBA code to collect certain stoc information for the year 2017 and 2018 and determine which stocks had a positive yearly return and how active each stock was traded.
 
-##**Analysis and Challenges**
+#**Analysis and Challenges**
 
 **Analysis of Daily Volume and Yearly Return of Stocks**
 
@@ -36,7 +36,7 @@ Using the green_stocks dataset we can refactor a Microsoft Excel VBA code to col
         >Change the A1 value to "All Stocks (2018)."
         >Change the first column header to "Ticker."
 **3. >Our new macro should do the following:**
-
+ 
     '1)Format the output sheet on the "All Stocks Analysis" worksheet.
             
             Worksheets("All Stocks Analysis").Activate
@@ -124,6 +124,7 @@ Using the green_stocks dataset we can refactor a Microsoft Excel VBA code to col
 End Sub
 
 **4. Debugging, going through the code to make sure the code is working properly.
+
 **5. Static Formatting:
      
     Worksheets("All Stocks Analysis").Activate
@@ -132,6 +133,7 @@ End Sub
     Range("B4:B15").NumberFormat = "#,##0"
     Range("C4:C15").NumberFormat = "0.0%"
     Columns("B").AutoFit
+
 **6. Conditional Formatting:
     
     dataRowStart = 4
@@ -156,9 +158,13 @@ End Sub
         End If
 
     Next i
+
 **7. Create a run button to automatically run analysis when pressed.
+
 **8. Create a run the ClearWorksheet macro. In order to reset the analyzed data.
+
 **9. Replace Hard-Coded Values to run the analysis for any year.
+    
     -Add at the beginning of a new macro:
     
     yearValue = InputBox("What year would you like to run the analysis on?")
@@ -169,6 +175,7 @@ End Sub
     -Replace first to get the row count, and inside the "For" loop.
     Worksheets("2018").Activate for 
     Sheets(yearValue).Activate
+
 **10. Measure code performance. The amount of time it will take to run "All Stocks Analysis"
         - First we will have to determine the start and end time, then set each variable equal to the "Timer" function
     Sub AllStocksAnalysis()
