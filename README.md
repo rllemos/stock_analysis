@@ -258,10 +258,14 @@ https://zoom.us/rec/play/3y8QSEzGpawN1aFaIdTTB07ORUoGVwlzCxrhpsY_vSxIxMMKwIEolwH
 
 3. Third challenge was setting up a "Nested For Loop".
     https://zoom.us/rec/play/3y8QSEzGpawN1aFaIdTTB07ORUoGVwlzCxrhpsY_vSxIxMMKwIEolwHZrynFP_TXJ1XLWYVjWcEC4rxd.4q3FJMwSSyZxC3BG?startTime=1637415343000&_x_zm_rtaid=-i-cEITxScOE-OFMLjGzqQ.1637430207851.2075cf95887cdc9463ec29789c0911c9&_x_zm_rhtaid=958
+
 ##**Results
+
 
 By looking at the Microsoft Excel sheet " All Stock Analysis" we can conclude that in the year 2017 out of the 12 tickers analyzed only one "TERP" had a negative yearly return. While the other 11 tickers yearly return percent change varies between 8.9% to 199.4%. While during the year 2018, 10 out of the 12 tickers show a negative yearly returns, with only "ENPH" and "RUN" showing a positive percent change of 81% and 84% respectively. It is important to note that the by refactoring the VBA script total macro run time decreased by approximately 0.47 seconds.
 <img width="1440" alt="VBA_Challenge_2017" src="https://user-images.githubusercontent.com/93225405/142737218-fd962561-7310-4b84-b608-2fede3e1841e.png">
+
+<img width="1440" alt="VBA_Challenge_2018" src="https://user-images.githubusercontent.com/93225405/142737248-439ef45c-b2ec-46a8-85fa-dd6d17ba971a.png">
 
 
 ##**Summary
