@@ -2,9 +2,9 @@
 Performing analysis on stock data to uncover daily volume and yearly returns.
 stock_analysis 
 
-#**VBA_Challenge**
+ **#VBA_Challenge**
 
-#**Overview of Project**
+ **#Overview of Project**
 
 Steve,our client, wants to analyze green energy stocks and compare the total daily volume and yearly return for each stock.
  To do so I will Create a VBA macro that can automate these analyses on a click of a button.
