@@ -33,8 +33,11 @@ Using the green_stocks dataset we can refactor a Microsoft Excel VBA code to col
     - Copy the code from DQAnalysis and make the following changes:
 
         >Activate "All Stocks Analysis" instead of "DQ Analysis."
+        
         >Change the A1 value to "All Stocks (2018)."
+        
         >Change the first column header to "Ticker."
+        
 **3. >Our new macro should do the following:**
  
     '1)Format the output sheet on the "All Stocks Analysis" worksheet.
