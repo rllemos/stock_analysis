@@ -2,7 +2,7 @@
 Performing analysis on stock data to uncover daily volume and yearly returns.
 stock_analysis 
  
- Excel file : VBA_Challenge.xlsm
+ Excel file : [VBA_Challenge.xlsm]
  
  ### **VBA_Challenge**
 
