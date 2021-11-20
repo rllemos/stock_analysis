@@ -16,12 +16,13 @@ Steve,our client, wants to analyze green energy stocks and compare the total dai
 4. Format the output sheet to make it easier to visualize.
 5. Repurpose the VBA macros to analyze multiple stocks.
 
-**###Purpose**
+##**Purpose**
+
 Using the green_stocks dataset we can refactor a Microsoft Excel VBA code to collect certain stoc information for the year 2017 and 2018 and determine which stocks had a positive yearly return and how active each stock was traded.
 
-##** Analysis and Challenges**
+##**Analysis and Challenges**
 
-** Analysis of Daily Volume and Yearly Return of Stocks**
+**Analysis of Daily Volume and Yearly Return of Stocks**
 
 **1. Create a worksheet to hold the data analysis for "DQ" stocks.**
     -Calculate the daily volume in 2018 using loops for "DQ"stocks.
@@ -121,6 +122,7 @@ Using the green_stocks dataset we can refactor a Microsoft Excel VBA code to col
    Next i
 
 End Sub
+
 **4. Debugging, going through the code to make sure the code is working properly.
 **5. Static Formatting:
      
@@ -261,7 +263,7 @@ https://zoom.us/rec/play/3y8QSEzGpawN1aFaIdTTB07ORUoGVwlzCxrhpsY_vSxIxMMKwIEolwH
 3. Third challenge was setting up a "Nested For Loop".
     https://zoom.us/rec/play/3y8QSEzGpawN1aFaIdTTB07ORUoGVwlzCxrhpsY_vSxIxMMKwIEolwHZrynFP_TXJ1XLWYVjWcEC4rxd.4q3FJMwSSyZxC3BG?startTime=1637415343000&_x_zm_rtaid=-i-cEITxScOE-OFMLjGzqQ.1637430207851.2075cf95887cdc9463ec29789c0911c9&_x_zm_rhtaid=958
 
-##**Results**
+#**Results**
 
 
 By looking at the Microsoft Excel sheet " All Stock Analysis" we can conclude that in the year 2017 out of the 12 tickers analyzed only one "TERP" had a negative yearly return. While the other 11 tickers yearly return percent change varies between 8.9% to 199.4%. While during the year 2018, 10 out of the 12 tickers show a negative yearly returns, with only "ENPH" and "RUN" showing a positive percent change of 81% and 84% respectively. It is important to note that the by refactoring the VBA script total macro run time decreased by approximately 0.47 seconds.
@@ -270,7 +272,7 @@ By looking at the Microsoft Excel sheet " All Stock Analysis" we can conclude th
 <img width="1440" alt="VBA_Challenge_2018" src="https://user-images.githubusercontent.com/93225405/142737248-439ef45c-b2ec-46a8-85fa-dd6d17ba971a.png">
 
 
-##**Summary**
+#**Summary**
 
 **Advantages and Disadvantages of Refactoring code in general:
 
