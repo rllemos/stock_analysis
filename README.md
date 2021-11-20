@@ -83,14 +83,16 @@ Using the green_stocks dataset we can refactor a Microsoft Excel VBA code to col
              RowCount = Cells(Rows.Count, "A").End(xlUp).Row
     
     '4)Loop through the tickers.
-        For i = 0 to 11
+       
+       For i = 0 to 11
        ticker = tickers(i)
        totalVolume = 0
-       '5) loop through rows in the data
+       
+     '5) loop through rows in the data
+       
        Worksheets("2018").Activate
        For j = 2 to RowCount
            
-    '5)Loop through rows in the data.
         
         '5a)Find the total volume for the current ticker.
         
