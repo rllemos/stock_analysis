@@ -202,19 +202,17 @@ End Sub
 
 End Sub
 
-**11. Refactor code:
+###**11. Refactor code:**
 
 
  '1a) Create a ticker Index
 
-  tickerIndex = 0
+    tickerIndex = 0
 
    '1b) Create three output arrays
 
   Dim tickerVolumes(12) As Long
-
   Dim tickerStartingPrices(12) As Single
-
   Dim tickerEndingPrices(12) As Single
 
 '2a) Create a for loop to initialize the tickerVolumes to zero.
