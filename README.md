@@ -2,12 +2,11 @@
 Performing analysis on stock data to uncover daily volume and yearly returns.
 stock_analysis 
 
- **#VBA_Challenge**
+ ### **VBA_Challenge**
 
- **#Overview of Project**
+ # **Overview of Project**
 
-Steve,our client, wants to analyze green energy stocks and compare the total daily volume and yearly return for each stock.
- To do so I will Create a VBA macro that can automate these analyses on a click of a button.
+Steve,our client, wants to analyze green energy stocks and compare the total daily volume and yearly return for each stock.To do so I will Create a VBA macro that can automate these analyses on a click of a button.
  >Daily volume is the total number of shares traded throughout the day; it measures how actively a stock is traded. The yearly return is the percentage difference in price from the beginning of the year to the end of the year.
 
 1. Create a worksheet to hold the data. Adding a header and assiging cell  row values.
@@ -16,11 +15,11 @@ Steve,our client, wants to analyze green energy stocks and compare the total dai
 4. Format the output sheet to make it easier to visualize.
 5. Repurpose the VBA macros to analyze multiple stocks.
 
-##**Purpose**
+## **Purpose**
 
 Using the green_stocks dataset we can refactor a Microsoft Excel VBA code to collect certain stoc information for the year 2017 and 2018 and determine which stocks had a positive yearly return and how active each stock was traded.
 
-#**Analysis and Challenges**
+# **Analysis and Challenges**
 
 **Analysis of Daily Volume and Yearly Return of Stocks**
 
@@ -124,13 +123,13 @@ Using the green_stocks dataset we can refactor a Microsoft Excel VBA code to col
        Cells(4 + i, 2).Value = totalVolume
        Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
 
-   Next i
+     Next i
 
-End Sub
+     End Sub
 
-**4. Debugging, going through the code to make sure the code is working properly.
+**4. Debugging, going through the code to make sure the code is working properly.**
 
-**5. Static Formatting:
+**5. Static Formatting:**
      
     Worksheets("All Stocks Analysis").Activate
     Range("A3:C3").Font.FontStyle = "Bold"
@@ -139,7 +138,7 @@ End Sub
     Range("C4:C15").NumberFormat = "0.0%"
     Columns("B").AutoFit
 
-**6. Conditional Formatting:
+**6. Conditional Formatting:**
     
     dataRowStart = 4
     dataRowEnd = 15
@@ -162,13 +161,13 @@ End Sub
 
         End If
 
-    Next i
+      Next i
 
-**7. Create a run button to automatically run analysis when pressed.
+**7. Create a run button to automatically run analysis when pressed.**
 
-**8. Create a run the ClearWorksheet macro. In order to reset the analyzed data.
+**8. Create a run the ClearWorksheet macro. In order to reset the analyzed data.**
 
-**9. Replace Hard-Coded Values to run the analysis for any year.
+**9. Replace Hard-Coded Values to run the analysis for any year.**
     
     -Add at the beginning of a new macro:
     
@@ -181,9 +180,10 @@ End Sub
     Worksheets("2018").Activate for 
     Sheets(yearValue).Activate
 
-**10. Measure code performance. The amount of time it will take to run "All Stocks Analysis"
+**10. Measure code performance. The amount of time it will take to run "All Stocks Analysis"**
         - First we will have to determine the start and end time, then set each variable equal to the "Timer" function
-    Sub AllStocksAnalysis()
+        
+        Sub AllStocksAnalysis()
         Dim startTime As Single
         Dim endTime  As Single
 
@@ -200,9 +200,9 @@ End Sub
     
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
-End Sub
+     End Sub
 
-###**11. Refactor code:**
+### **Refactor code:**
 
 
    '1a) Create a ticker Index
@@ -224,7 +224,7 @@ End Sub
     tickerStartingPrices(i) = 0
     tickerEndingPrices(i) = 0
 
-Next i
+    Next i
 
 '2b) Loop over all the rows in the spreadsheet.
 
@@ -252,7 +252,7 @@ Next i
             tickerIndex = tickerIndex + 1
         End If
 
-Next i
+        Next i
 
 '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
 For i = 0 To 11
@@ -262,27 +262,29 @@ For i = 0 To 11
     Cells(4 + i, 2).Value = tickerVolumes(i)
     Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
     
-Next i
+    Next i
 
 
 Macros completed
 
-###**Challenges**
+### **Challenges**
 
 1. First challenge was to write a macro in VBA get the numbers of rows with data:
     Solution was found in Stackoverflow
     
     RowCount = Cells(Rows.Count, "A").End(xlUp).Row
     
-https://stackoverflow.com/questions/18088729/row-count-where-data-exists/41538965
+    https://stackoverflow.com/questions/18088729/row-count-where-data-exists/41538965
 
 2. Second challenge was replacing the Hard-Coded Values. Especially knowing where to activate the "worksheets(yearValue).Activate" to get the row count and initialize "FOR" loop. 
-https://zoom.us/rec/play/3y8QSEzGpawN1aFaIdTTB07ORUoGVwlzCxrhpsY_vSxIxMMKwIEolwHZrynFP_TXJ1XLWYVjWcEC4rxd.4q3FJMwSSyZxC3BG?startTime=1637415343000&_x_zm_rtaid=-i-cEITxScOE-OFMLjGzqQ.1637430207851.2075cf95887cdc9463ec29789c0911c9&_x_zm_rhtaid=958
+
+    https://zoom.us/rec/play/3y8QSEzGpawN1aFaIdTTB07ORUoGVwlzCxrhpsY_vSxIxMMKwIEolwHZrynFP_TXJ1XLWYVjWcEC4rxd.4q3FJMwSSyZxC3BG?startTime=1637415343000&_x_zm_rtaid=-i-cEITxScOE-OFMLjGzqQ.1637430207851.2075cf95887cdc9463ec29789c0911c9&_x_zm_rhtaid=958
 
 3. Third challenge was setting up a "Nested For Loop".
     https://zoom.us/rec/play/3y8QSEzGpawN1aFaIdTTB07ORUoGVwlzCxrhpsY_vSxIxMMKwIEolwHZrynFP_TXJ1XLWYVjWcEC4rxd.4q3FJMwSSyZxC3BG?startTime=1637415343000&_x_zm_rtaid=-i-cEITxScOE-OFMLjGzqQ.1637430207851.2075cf95887cdc9463ec29789c0911c9&_x_zm_rhtaid=958
 
-#**Results**
+
+ # **Results**
 
 
 By looking at the Microsoft Excel sheet " All Stock Analysis" we can conclude that in the year 2017 out of the 12 tickers analyzed only one "TERP" had a negative yearly return. While the other 11 tickers yearly return percent change varies between 8.9% to 199.4%. While during the year 2018, 10 out of the 12 tickers show a negative yearly returns, with only "ENPH" and "RUN" showing a positive percent change of 81% and 84% respectively. It is important to note that the by refactoring the VBA script total macro run time decreased by approximately 0.47 seconds.
@@ -291,12 +293,12 @@ By looking at the Microsoft Excel sheet " All Stock Analysis" we can conclude th
 <img width="1440" alt="VBA_Challenge_2018" src="https://user-images.githubusercontent.com/93225405/142737248-439ef45c-b2ec-46a8-85fa-dd6d17ba971a.png">
 
 
-#**Summary**
+# **Summary**
 
-**Advantages and Disadvantages of Refactoring code in general:
+**Advantages and Disadvantages of Refactoring code in general:**
 
 Refactoring helps to organize and clean the macros so that VBA script can run faster. The advantages of refactoring a code is that it will run more efficiently, by taking fewer steps,using less memory, or to improve the logic of the code to make it easier to read.One disavantage is the added time it needs to refactor a code that is already working. Also a refactor code might need additional information or data.
 
-**Advantages and Disadvantages of the original and refactored VBA script:
+**Advantages and Disadvantages of the original and refactored VBA script:**
 
 The biggest advantage that occurred by refactoring the VBA script was an decrease in the total macro run time.Originally for the year 2017 the code ran in 0.72 seconds after refactoring the code fro 2017 ran for 0.25 seconds. The same can be viewed for the year 2018.
